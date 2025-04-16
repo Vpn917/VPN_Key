@@ -1,0 +1,106 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #00ffd0;
+  margin: 0;
+  padding: 0;
+}
+
+.game {
+  margin: 60px auto;
+  max-width: 500px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 38px;
+  text-shadow: 0 0 10px #00ffd0;
+}
+
+h2 {
+  margin-top: 30px;
+  text-shadow: 0 0 5px #00ffc3;
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #00ffd0;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s;
+  margin: 10px auto;
+  display: block;
+  box-shadow: 0 0 10px #00ffd0;
+  width: 90%;
+  max-width: 300px;
+}
+
+button:hover {
+  background-color: #00c9a7;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ffc3;
+}
+
+.shop {
+  margin-top: 20px;
+}
+
+.popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1e1e1e;
+  border: 2px solid #00ffd0;
+  padding: 25px;
+  z-index: 10;
+  border-radius: 12px;
+  color: #00ffd0;
+  font-weight: bold;
+  box-shadow: 0 0 15px #00ffc3;
+  animation: fadeIn 0.5s ease;
+  max-width: 90%;
+  word-break: break-all;
+}
+
+.hidden {
+  display: none;
+}
+
+.reset-btn {
+  background-color: transparent;
+  border: 2px solid #00ffd0;
+  color: #00ffd0;
+  margin-top: 40px;
+}
+
+.reset-btn:hover {
+  background-color: #00ffd0;
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8) translate(-50%, -50%); }
+  to { opacity: 1; transform: scale(1) translate(-50%, -50%); }
+}
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .popup {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
